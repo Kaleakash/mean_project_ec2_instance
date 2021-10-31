@@ -3,7 +3,7 @@ let express = require("express");
 let mongoose = require("mongoose");
 let cors = require("cors");
 let port  = 9090 || process.env.port;
-let url = "mongodb://localhost:27017/mean"
+let url = "mongodb://35.175.217.240:27017/mean"
 let employeeRouter = require("./router/employee.router");
 
 // creting the reference of express 
