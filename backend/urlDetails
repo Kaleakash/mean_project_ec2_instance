@@ -1,0 +1,42 @@
+Employee entity or collection 
+
+Main path : http://localhost:9090/api/employees
+
+get Method : to getAllEmployeeDetails 
+
+http://localhost:9090/api/employees/getAllEmployeeDetails
+
+get method : to get employee info using id 
+
+http://localhost:9090/api/employees/getEmployeeById/1
+
+http://localhost:9090/api/employees/getEmployeeById/100
+
+
+post method : to store employee records 
+
+http://localhost:9090/api/employees/employeeStore
+
+data 
+{"name":"Raju","salary":12000}
+
+
+
+put method : update employee salary using id 
+
+http://localhost:9090/api/employees/updateEmployeeSalary
+
+data 
+{"_id":100,"salary":24000}
+{"_id":1,"salary":22000}
+
+
+delete method : delete employee record by id 
+
+
+http://localhost:9090/api/employees/deleteEmployeeById/1
+http://localhost:9090/api/employees/deleteEmployeeById/100
+
+
+
+

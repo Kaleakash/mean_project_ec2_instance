@@ -1,0 +1,25 @@
+<div>
+    <h2>Store Employee Details</h2>
+    <form #empRef="ngForm" (ngSubmit)="storeEmployee(empRef)">
+        <label>Name</label>
+        <input type="text" name="name" ngModel/><br/>
+        <label>Salary</label>
+        <input type="text" name="salary" ngModel/><br/>
+        <input type="submit" value="Store Employee"/>
+        <input type="reset" value="reset"/>
+    </form>
+    <span style="color:red;">{{storeMessage}}</span>
+    <hr/>
+    <table border="1">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Salary</th>
+            </tr>
+            <tr *ngFor="let emp of employees">
+                <td>{{emp._id}}</td>
+                <td>{{emp.name}}</td>
+                <td>{{emp.salary}}</td>
+            </tr>
+    </table>
+</div>
